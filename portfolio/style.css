@@ -1,0 +1,390 @@
+body
+{
+	margin:0;
+	padding:0;
+	background: url("img/tlo.png");
+	/*font-family: 'Indie Flower', cursive;*/
+	/*font-family: 'Josefin Sans', sans-serif;*/
+	font-family: 'Lobster', cursive;
+}
+*
+{
+	box-sizing: border-box;
+}
+#przycisk
+{
+	background-color:black;
+	color:silver;
+	width:50px;
+	height:50px;
+	text-align:center;
+	padding:5px;
+	box-sizing:border-box;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+	z-index:100;
+	border: 1px solid white;
+	font-size:12px;
+	cursor:pointer;
+	display:none;
+	border-radius: 7px;
+	box-shadow: 2px 2px 2px 2px black;
+}
+#przycisk:hover
+{
+	color:#4682B4;
+}
+#container
+{
+	width: 100%;
+	height: 600px;
+	margin:auto;
+	position:relative;
+	background-color:black;
+	text-align:center;
+	border-rigth: 3px solid gray;
+	border-bottom: 3px solid gray;
+	border-left: 3px solid gray;
+	
+}
+
+p.text
+{
+	font-size:22px;
+	color:#696969;
+}
+#napisy
+{
+	display:inline-block;
+	width:500px;
+	height:200px;
+	margin:auto;
+	text-align:justify;
+	left:700px;
+	top:110px;
+	position:absolute;
+}
+
+#dupa
+{
+	position:absolute;
+	left:160px;
+	top:150px;
+	width:350px;
+	height:350px;
+	display:inline-block;
+	transition: 1s transform ease-in-out; 
+	opacity:0.90;
+
+}
+.spa
+{
+	color:#3299CC;
+}
+#dupa img
+{
+	width:100%;
+	height:100%;
+	border-radius:5px;
+	box-shadow: 2px 2px 2px 2px #222;
+	
+}
+#dupa:hover
+{
+	transform:rotate(-5deg) scale(1.10);
+	opacity:1;
+}
+
+
+
+#skills
+{
+	width: 100%;
+	height: 600px;
+	background-color: silver;
+	text-align:center;
+	margin:auto;
+	position: relative;
+	border-bottom: 1px solid black;
+
+
+}
+#dupa2
+{
+	
+	height:300px;
+	width:500px;
+	display:inline-block;
+	position:absolute;
+	left:700px;
+	top:150px;
+	transition: 1s transform linear; 
+	opacity:0.90;
+}
+#dupa2:hover
+{
+	transform: scale(1.1); 
+	opacity:1;
+}
+#dupa2 img
+{
+	width:100%;
+	height:100%;
+	border-radius:5px;
+	box-shadow: 2px 2px 2px 2px black;
+}
+#napisy2
+{	
+	position:absolute;
+	top :110px;
+	left:140px;
+	display:inline-block;
+	text-align:justify;
+	width:500px;
+	height:200px; /*ten sam problem ze tekst i div nie chca byc obok siebie ||| zle ulozenie divov, jeden byl w drugim*/
+}
+#ja
+{
+	float:left;
+	width: 300px;
+	height:50px;
+	text-align:center;
+	margin:auto;
+	margin-top:10px;
+	margin-left:50px;
+	box-shadow: 2px 2px 2px 2px black;
+	border-radius:5px;
+	border-style:outset;
+}
+#nav
+{
+	float:left;
+	background-color:gray;
+	text-align:center;
+	width:100%;
+	height:70px;
+	position:fixed;
+	z-index:100;
+	/*top:-10px;*/
+	opacity:0.9;
+	font-family: 'Josefin Sans', sans-serif;
+}
+#nav:hover
+{
+	opacity:1;
+	
+}
+#logo
+{
+	width:100%;
+	height:520px;
+	background: url("img/logo3.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-attachment:fixed;
+	position:relative;
+	text-align:center;
+	margin:auto;
+	
+}
+#cytat
+{
+	position:absolute;
+	bottom:10px;
+	width:100%;
+	margin:auto;
+	text-align:center;
+	
+}
+#kontakt
+{
+	width:100%;
+	height: 600px;
+	background-attachment:fixed;
+	overflow:hidden;
+	background: url("img/tlo.png");
+	margin-top:30px;
+	
+}
+#submenu
+{
+	margin:auto;
+	width:600px;
+	height:50px;
+	display:flex;
+	justify-content: space-between;
+	background-color:transparent;
+	margin-top:170px;
+	text-align:center;
+	
+	
+	
+}
+.option
+{
+	background-color:gray;
+	margin:auto;
+	flex-basis: 15%;
+	border-radius:5px;
+	box-shadow: 2px 2px 2px 2px black;
+	text-shadow: 2px 2px 2px black;
+	opacity: 0.9;
+}
+.option a
+{
+	text-decoration:none;
+	color:#4682B4;
+	
+}
+.option:hover > a 
+{
+	color:white;
+}
+.option:hover
+{
+	background-color:black;
+	opacity:1;
+}
+#dane
+{
+	width:400px;
+	height:170px;
+	margin:auto;
+	margin-top:100px;
+
+}
+#dane img
+{
+	display: inline-block;
+	width:100%;
+	height:100%;
+	border-radius:5px;
+	box-shadow: 2px 2px 2px 2px #000;
+	
+}
+#projekty
+{
+	width: 100%;
+	height: 1000px;
+	background-color: #4682B4;
+	text-align:center;
+	margin:auto;
+	position: relative;
+	border-bottom: 1px solid black;
+}
+.tile
+{
+	background-color:black;
+	width:540px;
+	height:320px;
+	position:relative;
+	left:20px;
+	top: 20px;
+	display: inline-block;
+	margin:40px;
+}
+.tile img
+{
+	border-radius:5px;
+	box-shadow: 2px 2px 2px 2px #000;
+	width:540px;
+	height:320px;
+}
+.tile img:hover
+{
+	opacity:0.8;
+	cursor:pointer;
+}
+#footer
+{
+	background-color: black;
+	letter-spacing: 2px;
+	color: white;
+	text-align:center;
+	width: 100%;
+	min-height:20px;
+	clear:both;
+	font-family: 'Josefin Sans', sans-serif;
+}
+ul.menu > li
+{
+	display:inline-block;
+	padding:10px;
+	margin:10px;
+	width:150px;
+	background-color:silver;
+	border-radius:5px;
+	letter-spacing:4px;
+	margin:auto;
+	margin-right:10px;
+	box-shadow: 2px 2px 2px 2px black;
+}
+ul.menu
+{
+	text-shadow: 1px 1px 1px black;
+}
+
+ul.menu a
+{
+	text-decoration:none;
+	display:block;
+	color:#4682B4;
+}
+
+ul.menu > li:hover > a
+{
+	color:white;
+}
+ul.menu > li:hover
+{
+	background-color:black;
+}
+h1
+{
+	text-align:center;
+	margin:auto;
+	font-size:50px;
+	letter-spacing:15px;
+	position:relative;
+	top:20px;
+	color:gray;
+	margin-bottom:50px;
+	text-transform:uppercase;
+	text-shadow: 2px 2px 2px black;
+
+	/*animation: moja_animacja 12s infinite; animacja zmiany koloru literek*/
+}
+h2
+{
+	text-align:center;
+	margin-bottom:20px;
+	font-size:30px;
+	letter-spacing:10px;
+}
+h3
+{
+	font-size:16px;
+	letter-spacing:4px;
+	
+}
+h3 >a
+{
+	text-decoration:none;
+	color:black;
+}
+p.kontakty
+{
+	font-size: 20px;
+	margin:auto;
+	font-family: 'Josefin Sans', sans-serif;
+	padding:10px;
+	text-align:center;
+}
+/*@keyframes moja_animacja
+{
+  0%, 100% {color:white; }
+  25% { color:gold; }
+  50% {color:red; }
+  75% {color:green; }
+}*/
