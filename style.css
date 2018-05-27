@@ -1,0 +1,183 @@
+body
+{
+	background-image: url("img/moulin.png");
+	background-attachment:fixed;
+}
+#console
+{
+	width:1000px;
+	height: 200px;
+	background-color:black;
+	margin:auto;
+	border: 3px solid gray;
+	border-top-width:23px;
+	border-top-style:ridge;
+	position:relative;
+	border-radius:3px;
+	box-shadow: 2px 2px 20px 2px silver;
+}
+
+#typing
+{
+	color:#36c534;
+	margin:0;
+	font-size:30px;
+	text-align:center;
+	
+}
+#typing::before
+{
+	content:'Casino del Diablo';
+	color:red;
+	display:block;
+	margin-top:20px;
+	margin-bottom:20px;
+	animation: kolor 1s infinite;
+	letter-spacing:10px;
+}
+#typing::after
+{
+	content:'_';
+	animation-name:blink;
+	animation-duration:0.9s;
+	animation-iteration-count: infinite;
+}
+@keyframes blink
+{
+	from{
+	opacity:0;	
+	}
+	to
+	{
+		opacity:1;
+	}
+}
+@keyframes kolor
+{
+	0%{
+		color:red;
+	}
+	50%
+	{
+		color: green;
+	}
+	100%
+	{
+		color:red;
+	}
+}
+
+#stol
+{
+	width:1200px;
+	height:600px;
+	background-color:#006400;
+	margin:auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	border: 30px solid #A0522D;
+	box-sizing:border-box;
+	border-radius:10%;
+	position:relative;
+
+}
+#stol::before
+{
+	content:'';
+	width:1180px;
+	height:580px;
+	background-color:transparent;
+	position:absolute;
+	top:-20px;
+	left:-20px;
+	border-radius:10%;
+	border:7px ridge #8B4513;
+	box-sizing:border-box;
+	box-shadow: 2px 2px 20px 2px black;
+}
+
+#kolo
+{
+	background-image: url("img/ko³ko.png");
+	width:300px;
+	height:300px;
+	border-radius:50%;
+	position:absolute;
+	top:100px;
+	left:100px;
+	border:20px double silver;
+}
+
+img
+{
+	width:100%;
+	height:100%;
+}
+#pula
+{
+	width:500px;
+	height:250px;
+	position:absolute;
+	right:80px;
+	top:100px;
+	
+}
+
+@keyframes obkret
+{
+	0%
+	{
+		transform:rotate(0deg);
+	}
+	100% 
+	{
+		transform: rotate(stopnie + deg); /*nie wiadomo czemu wczesniej nie dzia³a³o ale pobiera wartoœæ z js z funkcji random */
+	}
+}
+input[type=submit]
+{
+	position:absolute;
+	bottom:50px;
+	right:120px;
+	width:180px;
+	height:100px;
+	background-color:#990000;
+	border:5px outset #cc9900;
+	border-radius: 5%;
+	font-size:18px;
+}
+input[type=submit]:hover
+{
+	cursor:pointer;
+	background-color: #B11111;
+	border:2px outset yellow;
+	color:white;
+}
+input[type=text]
+{
+	position:absolute;
+	bottom:70px;
+	right:350px;
+	width:100px;
+	height:50px;
+	padding:2px;
+	box-sizing:border-box;
+	border: 2px solid grey;
+	border-radius: 5px;
+}
+#sprawdz
+{
+	width: 210px;
+	height:100px;
+	background-color:#999900;
+	text-align:center;
+	font-size:36px;
+	position:absolute;
+	bottom :60px;
+	right: 500px;
+	padding-top:25px;
+	box-sizing:border-box;
+	border: 3px solid gray;
+	color: #FFFFCC;
+	border-radius: 10px;
+}
